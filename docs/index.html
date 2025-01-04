@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketched into Mobile Dust</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c3c7cb;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #e4e4e4;
+            border-right: 2px solid #000;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 5px 0;
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid #000;
+            background-color: #fff;
+        }
+
+        .sidebar li:hover {
+            background-color: #d1d1d1;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #000;
+        }
+
+        .content .description {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 10px;
+            border: 2px solid #000;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li onclick="showContent('Sketched into Mobile Dust')">Sketched into Mobile Dust</li>
+                <li onclick="showContent('Drawing 1')">Drawing 1</li>
+                <li onclick="showContent('Drawing 2')">Drawing 2</li>
+                <li onclick="showContent('Drawing 3')">Drawing 3</li>
+                <li onclick="showContent('Drawing 4')">Drawing 4</li>
+                <li onclick="showContent('Drawing 5')">Drawing 5</li>
+                <li onclick="showContent('Drawing 6')">Drawing 6</li>               
+                <li onclick="showContent('Drawing 7')">Drawing 7</li>
+                <li onclick="showContent('Drawing 8')">Drawing 8</li>                
+                <li onclick="showContent('Drawing 9')">Drawing 9</li>
+                <li onclick="showContent('Drawing 10')">Drawing 10</li>
+                <li onclick="showContent('Drawing 11')">Drawing 11</li>
+                <li onclick="showContent('Drawing 12')">Drawing 12</li>
+                <li onclick="showContent('Drawing 13')">Drawing 13</li>
+                <li onclick="showContent('Drawing 14')">Drawing 14</li>
+                <li onclick="showContent('Drawing 15')">Drawing 15</li>
+                <li onclick="showContent('Drawing 16')">Drawing 16</li>                
+                <li onclick="showContent('Drawing 17')">Drawing 17</li>
+                <li onclick="showContent('Drawing 18')">Drawing 18</li>                
+                <li onclick="showContent('Drawing 19')">Drawing 19</li>
+                <li onclick="showContent('Drawing 20')">Drawing 20</li>
+                <!-- Add more items here -->
+            </ul>
+        </div>
+        <div class="content">
+            <img id="contentImage" src="" alt="" style="display: none;">
+            <div id="contentDescription" class="description" style="display: none;">
+                <!-- Content description will appear here -->
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <script>
+        function showContent(item) {
+            const contentImage = document.getElementById('contentImage');
+            const contentDescription = document.getElementById('contentDescription');
+
+            if (item === 'Sketched into Mobile Dust') {
+                contentImage.src = 'example-image.jpg'; // Replace with the actual image URL
+                contentImage.style.display = 'block';
+                contentDescription.textContent = 'These works I made in Itoshima, drawing on old newspaper, found books, and other garbage.';
+                contentDescription.style.display = 'block';
+            } else if (item === 'Drawing 1') {
+                contentImage.src = 'media/bar.png';
+                contentImage.style.display = 'none';
+                contentDescription.textContent = '';
+                contentDescription.style.display = 'block';
+            } else if (item === 'Unseen Garden') {
+                contentImage.src = '';
+                contentImage.style.display = 'none';
+                contentDescription.textContent = 'Details about Unseen Garden.';
+                contentDescription.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
