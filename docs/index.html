@@ -8,8 +8,9 @@
         body {
             font-family: 'Tahoma', sans-serif;
             margin: 0;
+            color: rgb(201, 201, 201);
             padding: 0;
-            background-color: #c3c7cb;
+            background-color: white;
             display: flex;
             height: 100vh;
             overflow: hidden;
@@ -26,8 +27,8 @@
             min-width: 250px; /* Prevent shrinking */
             max-width: 250px; /* Prevent expanding */
             height: 100%; /* Full height */
-            background-color: #e4e4e4;
-            border-right: 2px solid #000;
+            background-color: #ffffff;
+            border-right: 2px solid #ffffff;
             padding: 10px;
             box-sizing: border-box; /* Includes padding in width/height */
             overflow-y: auto; /* Add scrollbars if content overflows */
@@ -43,7 +44,7 @@
             margin: 5px 0;
             padding: 5px;
             cursor: pointer;
-            border: 1px solid #000;
+            border: 1px solid #ffffff;
             background-color: #fff;
             text-align: center;
             overflow-wrap: break-word; /* Prevent text from breaking layout */
@@ -64,8 +65,8 @@
         }
 
         .content img {
-            max-width: 50%;
-            height: auto;
+            max-height: 500px;
+            width: auto;
             border: 2px solid #000;
         }
 
@@ -73,7 +74,7 @@
             margin-top: 20px;
             background-color: #fff;
             padding: 10px;
-            border: 2px solid #000;
+            border: 2px solid #ffffff;
             width: 50%;
             max-width: 600px;
             justify-content: center;
@@ -102,8 +103,7 @@
                 <li onclick="showContent('Drawing 16')">Drawing 16</li>
                 <li onclick="showContent('Drawing 17')">Drawing 17</li>
                 <li onclick="showContent('Drawing 18')">Drawing 18</li>
-                <li onclick="showContent('Drawing 19')">Drawing 19</li>
-                <li onclick="showContent('Drawing 20')">Drawing 20</li>
+                
                 <!-- Add more items here -->
             </ul>
         </div>
@@ -123,54 +123,89 @@
             // Define the images and descriptions
             const contentData = {
                 "Drawing 1": {
-                    src: "media/2baar.png", // Replace with actual path
+                    src: "media/1.png", // Replace with actual path
                     description: "Having a beer at the bar"
                 },
                 "Drawing 2": {
-                    src: "media/hoodienchuo.png", // Replace with actual path
-                    description: "Taking a break from the chuo for a dart"
+                    src: "media/2.png", // Replace with actual path
+                    description: "Walking in the snow"
                 },
 
                 "Drawing 3": {
-                    src: "media/JJJ.png", // Replace with actual path
-                    description: "Dragon in a chequebook"
+                    src: "media/3.png", // Replace with actual path
+                    description: "Lou Reed"
                 },
                 
                 "Drawing 4": {
-                    src: "media/roosters.png", // Replace with actual path
-                    description: "Couple of roosters at Gion Station"
+                    src: "media/4.png", // Replace with actual path
+                    description: "Eeki Peeki"
                 },
                 "Drawing 5": {
-                    src: "media/capricorn.png", // Replace with actual path
-                    description: "Ancient Capricorn study"
+                    src: "media/5.png", // Replace with actual path
+                    description: "Sneak"
                 },
                 "Drawing 6": {
-                    src: "media/.png", // Replace with actual path
+                    src: "media/6.png", // Replace with actual path
                     description: "Couple of roosters at Gion Station"
                 },
 
                 "Drawing 7": {
-                    src: "media/anotherdude.png", // Replace with actual path
-                    description: "couple of fresh looking dudes"
+                    src: "media/7.png", // Replace with actual path
+                    description: "Exit row behind the gates"
                 },
 
                 "Drawing 8": {
-                    src: "media/benedict.png", // Replace with actual path
-                    description: "Couple of roosters at Gion Station"
+                    src: "media/8.png", // Replace with actual path
+                    description: "lads"
                 },
 
                 "Drawing 9": {
-                    src: "media/cop.png", // Replace with actual path
-                    description: "Couple of roosters at Gion Station"
+                    src: "media/9.png", // Replace with actual path
+                    description: "copper"
                 },
                 "Drawing 10": {
-                    src: "media/matador.png", // Replace with actual path
-                    description: "Couple of roosters at Gion Station"
+                    src: "media/10.png", // Replace with actual path
+                    description: "lui"
                 },
 
                 "Drawing 11": {
-                    src: "media/badaairport.png", // Replace with actual path
-                    description: "Couple of roosters at Gion Station"
+                    src: "media/11.png", // Replace with actual path
+                    description: "devil in the sun"
+                },
+
+                "Drawing 12": {
+                    src: "media/12.png", // Replace with actual path
+                    description: "Walking away"
+                },
+
+                "Drawing 13": {
+                    src: "media/13.png", // Replace with actual path
+                    description: "breaking thru"
+                },
+
+                "Drawing 14": {
+                    src: "media/14.png", // Replace with actual path
+                    description: "hoodie"
+                },
+
+                "Drawing 15": {
+                    src: "media/15.png", // Replace with actual path
+                    description: "boxers"
+                },
+
+                "Drawing 16": {
+                    src: "media/16.png", // Replace with actual path
+                    description: "car crash"
+                },
+
+                "Drawing 17": {
+                    src: "media/17.png", // Replace with actual path
+                    description: "journal"
+                },
+
+                "Drawing 18": {
+                    src: "media/18.png", // Replace with actual path
+                    description: "newspaper"
                 },
             };
 
