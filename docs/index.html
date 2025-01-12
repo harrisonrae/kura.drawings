@@ -79,6 +79,31 @@
             max-width: 600px;
             justify-content: center;
         }
+
+          /* Media query for smaller screens */
+          @media (max-width: 768px) {
+            .page {
+                width: 80%; /* Reduce width */
+                height: 40%; /* Reduce height */
+                margin: 3px 0;
+            }
+
+            .page img {
+                object-fit: contain; /* Ensure images scale nicely */
+            }
+
+            footer {
+                font-size: 12px; /* Smaller footer text */
+            }
+        }
+
+        /* Media query for very small screens like phones */
+        @media (max-width: 480px) {
+            .page {
+                width: 75%; /* Further reduce width */
+                height: 35%; /* Further reduce height */
+            }
+        }
     </style>
 </head>
 <body>
