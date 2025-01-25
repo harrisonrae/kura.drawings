@@ -23,15 +23,16 @@
         }
 
         .sidebar {
-            width: 250px; /* Fixed width */
-            min-width: 250px; /* Prevent shrinking */
-            max-width: 250px; /* Prevent expanding */
-            height: 100%; /* Full height */
+            width: 300px; /* Fixed width */
+            min-width: 300px; /* Prevent shrinking */
+            max-width: 300px; /* Prevent expanding */
+            height: 40%; /* Full height */
             background-color: #ffffff;
             border-right: 2px solid #ffffff;
-            padding: 10px;
+            padding: 5px;
             box-sizing: border-box; /* Includes padding in width/height */
-            overflow-y: auto; /* Add scrollbars if content overflows */
+            overflow-y: scroll; /* Add scrollbars if content overflows */
+            scrollbar-color: black;
         }
 
         .sidebar ul {
@@ -41,7 +42,7 @@
         }
 
         .sidebar li {
-            margin: 5px 0;
+            margin: 3px 0;
             padding: 5px;
             cursor: pointer;
             border: 1px solid #ffffff;
@@ -83,7 +84,7 @@
           /* Media query for smaller screens */
           @media (max-width: 768px) {
             .page {
-                width: 80%; /* Reduce width */
+                width: 50%; /* Reduce width */
                 height: 40%; /* Reduce height */
                 margin: 3px 0;
                 overflow-y: auto; /* Enable vertical scrolling */
@@ -103,8 +104,8 @@
         /* Media query for very small screens like phones */
         @media (max-width: 480px) {
             .page {
-                width: 75%; /* Further reduce width */
-                height: 35%; /* Further reduce height */
+                width: 25%; /* Further reduce width */
+                height: 15%; /* Further reduce height */
             }
         }
     </style>
@@ -131,6 +132,10 @@
                 <li onclick="showContent('Drawing 16')">Drawing 16</li>
                 <li onclick="showContent('Drawing 17')">Drawing 17</li>
                 <li onclick="showContent('Drawing 18')">Drawing 18</li>
+                <li onclick="showContent('Drawing 19')">Drawing 19</li>
+                <li onclick="showContent('Drawing 20')">Drawing 20</li>
+                <li onclick="showContent('Drawing 21')">Drawing 21</li>
+                <li onclick="showContent('Drawing 22')">Drawing 22</li>
                 
                 <!-- Add more items here -->
             </ul>
@@ -233,6 +238,26 @@
 
                 "Drawing 18": {
                     src: "media/18.png", // Replace with actual path
+                    description: "newspaper"
+                },
+
+                "Drawing 19": {
+                    src: "media/19.png", // Replace with actual path
+                    description: "newspaper"
+                },
+
+                "Drawing 20": {
+                    src: "media/20.png", // Replace with actual path
+                    description: "newspaper"
+                },
+
+                "Drawing 21": {
+                    src: "media/21.png", // Replace with actual path
+                    description: "newspaper"
+                },
+
+                "Drawing 22": {
+                    src: "media/22.png", // Replace with actual path
                     description: "newspaper"
                 },
             };
